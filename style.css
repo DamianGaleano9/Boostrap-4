@@ -1,5 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+
+  } 
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400%;
+    padding-bottom: .2rem; 
+  }
+  
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+
+  }
+}
+
 
 
 /* CSS */
@@ -201,4 +240,13 @@ figure {
           transform: translateZ(0);
   will-change: transform;
   background-repeat: no-repeat;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+.bg-light {
+transition: all 1s ease;
 }
